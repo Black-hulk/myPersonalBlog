@@ -30,13 +30,13 @@ body{
 form .dbl-field{
     /* display: flex; */
     align-items: center;
-    margin-bottom: 25px;
     justify-content: space-between;
 }
 .dbl-field .field{
     height: 50px;
+    margin-bottom: 25px;
     position: relative;
-    width: calc((100% /2) -13px);
+    width: calc(100%/2 -13px);
 }
 form .field input, form .message textarea{
     height: 100%;
@@ -47,6 +47,18 @@ form .field input, form .message textarea{
     border-radius: 5px;
     border: 1px solid gray;
 }
+form .field input::placeholder,
+ form .message textarea::placeholder{
+    color: gray;
+ }
+ form .field input:focus, 
+ form .message textarea:focus{
+    border: 2px solid black;
+ }
+ form .field input:focus ~ i,
+ form .message textarea:focus~i{
+    color: black;
+ }
 .wrapper form i{
     position: absolute;
     left: 18px;
@@ -60,7 +72,7 @@ form .message{
     position: relative;
 }
 form .message i{
-    top: 20 px;
+    top: 15px;
     font-size: 20px;
 }
 form .message textarea{
@@ -70,4 +82,45 @@ form .message textarea{
     max-width: 300px;
 
 }
+form .button-field{
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+}
+.button-field button{
+    font-size: 22px;
+    color: #fff;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    cursor: pointer;
+}
+.button-field span{
+    color: black;
+    padding-left: 20px;
+}
 
+@media(max-width:600px){
+    .wrapper header{
+        text-align: center;
+    }
+    form .dbl-field{
+        margin-bottom: 0;
+        flex-direction: column;
+    }
+    .dbl-field .field{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    form .button-field{
+        flex-direction: column;
+    }
+    .button-field button{
+        width: 100%;
+    }
+    .button-field span{
+        text-align: center;
+        margin: 20px;
+    }
+}
