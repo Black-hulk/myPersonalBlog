@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="CSS/contuctstyle.css">
 	<title>Cuntact Me</title>
 </head>
-<style type="text/css">
-	body{
-		background-image: url(image/bg.jpg);
-	}
-	label{
-		color: #13eb98;
-		padding: 20px;
-		text-align: center;
-	}
-	input{
-		width: 50%;
-		border-radius: 10px;
-		padding: 20px;
-	}
-	input[type="submit"]{
-		background-color: gray;
-	}
-	form{
 
-	}
-</style>
 <body>
-	<form>
-		<label>First Name:</label><br>
-		<input type="text" name="fName" value="" required><br>
-		<label>Last Name:</label><br>
+	<div class="wrapper">
+		<header>Send Me Massage</header>
+		<form action="#">
+			<div class="dbl-field">
+				<div class="field">
+					<input type="text" name="fName" placeholder="Ener Your Name" required><br>
+					<i class="fas fa-user"></i>
+				</div>
+				<div class="field">
+					
+					<input type="text" name="fName" placeholder="Ener Your Phone Number" required><br>
+					<i class="fas fa-phone"></i>
+				</div>
+				<div class="field">
+					
+					<input type="text" name="fName" placeholder="Ener Your Email" required><br>
+					<i class="fas fa-envelope"></i>
+				</div>
+				<div class="message">
+					<textarea placeholder="Write Your Massage"></textarea>
+					<i class="material-icons">message</i>
+				</div>
+				<div class="button-field">
+					<button type="submit">Send Message</button>
+					<span>Sending Message....</span>
+				</div>
+			</div>
+		</form>
+	</div>
+
+</body>
+
+</html>
+
+<!-- <label>Last Name:</label><br>
 		<input type="text" name="fName" value="" required><br>
 		<label>Email:</label><br>
 		<input type="Email" name="fName" value="" required><br>
 		<label>Contact for:</label><br>
 		<input type="textarea" name="subject" value="" required><br>
-		<input type="submit" name="Submit">
-	</form>
-</body>
-</html>
+		<input type="submit" name="Submit"> -->
