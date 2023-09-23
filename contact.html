@@ -13,42 +13,33 @@
 <body>
 	<div class="wrapper">
 		<header>Send Me Massage</header>
-		<form action="#">
+		<form action="message.php">
 			<div class="dbl-field">
 				<div class="field">
-					<input type="text" name="fName" placeholder="Ener Your Name" required><br>
+					<input type="text" name="name" placeholder="Ener Your Name" ><br>
 					<i class="fas fa-user"></i>
 				</div>
 				<div class="field">
 					
-					<input type="text" name="fName" placeholder="Ener Your Phone Number" required><br>
+					<input type="text" name="phone" placeholder="Ener Your Phone Number" ><br>
 					<i class="fas fa-phone"></i>
 				</div>
 				<div class="field">
 					
-					<input type="text" name="fName" placeholder="Ener Your Email" required><br>
+					<input type="text" name="email" placeholder="Ener Your Email" ><br>
 					<i class="fas fa-envelope"></i>
 				</div>
 				<div class="message">
-					<textarea placeholder="Write Your Massage"></textarea>
+					<textarea placeholder="Write Your Massage" name="message"></textarea>
 					<i class="material-icons">message</i>
 				</div>
 				<div class="button-field">
 					<button type="submit">Send Message</button>
-					<span>Sending Message....</span>
+					<span>Sending Your Message....</span>
 				</div>
 			</div>
 		</form>
 	</div>
-
+<script src="js/script.js"></script>
 </body>
-
 </html>
-
-<!-- <label>Last Name:</label><br>
-		<input type="text" name="fName" value="" required><br>
-		<label>Email:</label><br>
-		<input type="Email" name="fName" value="" required><br>
-		<label>Contact for:</label><br>
-		<input type="textarea" name="subject" value="" required><br>
-		<input type="submit" name="Submit"> -->

@@ -99,6 +99,7 @@ form .button-field{
 .button-field span{
     color: black;
     padding-left: 20px;
+    display: none;
 }
 
 @media(max-width:600px){
